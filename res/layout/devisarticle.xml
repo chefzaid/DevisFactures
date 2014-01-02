@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:id="@+id/lytDevisArticleScrollView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+>
+
+<LinearLayout
+android:id="@+id/lytDevisArticleLinearLayout"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+>
+<TableLayout
+android:id="@+id/lytDevisArticleTableLayoutTop"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytDevisArticleTableLayoutTopRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnDevisArticlePremier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisArticlePrecedent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisArticleSuivant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisArticleDernier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;&gt;"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+<TextView
+android:id="@+id/lblDevisNum"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Identifiant article : "
+>
+</TextView>
+<Spinner 
+android:layout_height="wrap_content" 
+android:id="@+id/spinnerDevisArticle" 
+android:layout_margin="4px" 
+android:layout_width="fill_parent" /> 
+<EditText
+android:id="@+id/txtDevisArticleId"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisArticleLibelle"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Désignation : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisArticleLibelle"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisArticleQtte"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Quantité : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisArticleQtte"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisArticlePrixHT"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix unitaire HT : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisArticlePrixHT"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisArticlePrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix unitaire TTC : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisArticlePrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TableLayout
+android:id="@+id/lytDevisTableLayoutBottom"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytDevisTableLayoutBottomRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnDevisArticleVider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nouveau"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisArticleAjouter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ajouter"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisArticleModifier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modifier"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisArticleSupprimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Supprimer"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+

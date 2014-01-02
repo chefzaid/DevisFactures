@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionFactureRecherchercher"
+          android:title="Rechercher"
+          android:icon="@drawable/search" />
+    <item android:id="@+id/optionFactureFiltrer"
+          android:title="Filtrer"
+          android:icon="@drawable/filter" />
+    <item android:id="@+id/optionFactureTrier"
+          android:title="Trier"
+          android:icon="@drawable/sort" />
+    <item android:id="@+id/optionFacturePlus"
+		  android:title="Plus"
+		  android:icon="@drawable/more" >
+          <menu>
+            <item android:id="@+id/optionFactureAnnulerFiltre"
+          		  android:title="Annuler filtre/tri" />
+          	<item android:id="@+id/optionFactureAfficherClient"
+          		  android:title="Afficher le client" />
+  			<item android:id="@+id/optionFacturePDF"
+          		  android:title="Covertir en PDF" />
+  			<item android:id="@+id/optionFactureEmail"
+          		  android:title="Envoyer par email" />
+  			<item android:id="@+id/optionFactureAppel"
+          		  android:title="Appeler le client" />
+          </menu>
+    </item>       
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionArticleRecherchercher"
+          android:title="Rechercher"
+          android:icon="@drawable/search" />
+    <item android:id="@+id/optionArticleFiltrer"
+          android:title="Filtrer"
+          android:icon="@drawable/filter" />
+    <item android:id="@+id/optionArticleTrier"
+          android:title="Trier"
+          android:icon="@drawable/sort" />
+    <item android:id="@+id/optionArticleAnnulerFiltre"
+          android:title="Annuler filtre/tri"
+          android:icon="@drawable/cancel" />
+</menu>

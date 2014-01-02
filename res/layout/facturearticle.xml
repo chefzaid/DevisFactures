@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:id="@+id/lytFactureArticleScrollView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+>
+
+<LinearLayout
+android:id="@+id/lytFactureArticleLinearLayout"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+>
+<TableLayout
+android:id="@+id/lytFactureArticleTableLayoutTop"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytFactureArticleTableLayoutTopRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnFactureArticlePremier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureArticlePrecedent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureArticleSuivant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureArticleDernier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;&gt;"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+<TextView
+android:id="@+id/lblFactureNum"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Identifiant article :"
+>
+</TextView>
+<Spinner 
+android:layout_height="wrap_content" 
+android:id="@+id/spinnerFactureArticle" 
+android:layout_margin="4px" 
+android:layout_width="fill_parent" /> 
+<EditText
+android:id="@+id/txtFactureArticleId"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureArticleLibelle"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Désignation : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureArticleLibelle"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureArticleQtte"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Quantité : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureArticleQtte"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureArticlePrixHT"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix unitaire HT : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureArticlePrixHT"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureArticlePrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix unitaire TTC : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureArticlePrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TableLayout
+android:id="@+id/lytFactureTableLayoutBottom"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytFactureTableLayoutBottomRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnFactureArticleVider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nouveau"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureArticleAjouter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ajouter"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureArticleModifier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modifier"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureArticleSupprimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Supprimer"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+

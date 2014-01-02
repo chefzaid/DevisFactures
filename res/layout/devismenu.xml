@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionDevisRecherchercher"
+          android:title="Rechercher"
+          android:icon="@drawable/search" />
+    <item android:id="@+id/optionDevisFiltrer"
+          android:title="Filtrer"
+          android:icon="@drawable/filter" />
+    <item android:id="@+id/optionDevisTrier"
+          android:title="Trier"
+          android:icon="@drawable/sort" />
+    <item android:id="@+id/optionDevisPlus"
+		  android:title="Plus"
+		  android:icon="@drawable/more" >
+          <menu>
+            <item android:id="@+id/optionDevisAnnulerFiltre"
+          		  android:title="Annuler filtre/tri" />
+          	<item android:id="@+id/optionDevisAfficherClient"
+          		  android:title="Afficher le client" />
+          	<item android:id="@+id/optionDevisConvFacture"
+          		  android:title="Convertir en facture" />   
+  			<item android:id="@+id/optionDevisPDF"
+          		  android:title="Covertir en PDF" />
+  			<item android:id="@+id/optionDevisEmail"
+          		  android:title="Envoyer par email" />
+  			<item android:id="@+id/optionDevisAppel"
+          		  android:title="Appeler le client" />
+          </menu>
+    </item>       
+</menu>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:id="@+id/lytClientScrollView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+>
+
+<LinearLayout
+android:id="@+id/lytClientLinearLayout"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+>
+<TableLayout
+android:id="@+id/lytClientTableLayoutTop"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytClientTableLayoutTopRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnClientPremier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnClientPrecedent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnClientSuivant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnClientDernier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;&gt;"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+<TextView
+android:id="@+id/lblClientId"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Identifiant client : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientId"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblClientRaisonSociale"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Raison sociale : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientRaisonSociale"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblClientAdr"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Adresse : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientAdr"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblClientEmail"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Email : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientEmail"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblClientTel"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Téléphone : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientTel"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblClientFax"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Fax : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientFax"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblClientNotes"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Notes : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtClientNotes"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TableLayout
+android:id="@+id/lytClientTableLayoutBottom"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytClientTableLayoutBottomRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnClientVider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nouveau"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnClientAjouter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ajouter"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnClientModifier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modifier"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnClientSupprimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Supprimer"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>

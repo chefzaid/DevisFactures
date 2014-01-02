@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:id="@+id/lytDevisScrollView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+>
+
+<LinearLayout
+android:id="@+id/lytDevisLinearLayout"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+>
+<TableLayout
+android:id="@+id/lytDevisTableLayoutTop"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytDevisTableLayoutTopRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnDevisPremier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisPrecedent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisSuivant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisDernier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;&gt;"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+<TextView
+android:id="@+id/lblDevisNum"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Numéro du devis : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisNum"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisDate"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Date : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisDate"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisClient"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Identifiant client : "
+>
+</TextView>
+<Spinner 
+android:layout_height="wrap_content" 
+android:id="@+id/spinnerDevisClient" 
+android:layout_margin="4px" 
+android:layout_width="fill_parent" />
+<EditText
+android:id="@+id/txtDevisClient"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisPrixHT"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix total HT : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisPrixHT"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisPrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix total TTC : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisPrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblDevisNotes"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Notes : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtDevisNotes"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<CheckBox
+android:id="@+id/ckboxDevisFacture"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Facturé"
+>
+</CheckBox>
+<TableLayout
+android:id="@+id/lytDevisTableLayoutBottom"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytDevisTableLayoutBottomRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnDevisVider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nouveau"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisAjouter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ajouter"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisModifier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modifier"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnDevisSupprimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Supprimer"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+

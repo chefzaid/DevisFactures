@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:id="@+id/lytFactureScrollView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+>
+
+<LinearLayout
+android:id="@+id/lytFactureLinearLayout"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+>
+<TableLayout
+android:id="@+id/lytFactureTableLayoutTop"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytFactureTableLayoutTopRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnFacturePremier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFacturePrecedent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureSuivant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureDernier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&gt;&gt;"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+<TextView
+android:id="@+id/lblFactureNum"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Numéro de facture : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureNum"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureDate"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Date : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureDate"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureClient"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Identifiant client : "
+>
+</TextView>
+<Spinner 
+android:layout_height="wrap_content" 
+android:id="@+id/spinnerFactureClient" 
+android:layout_margin="4px" 
+android:layout_width="fill_parent" />
+<EditText
+android:id="@+id/txtFactureClient"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFacturePrixHT"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix total HT : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFacturePrixHT"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFacturePrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Prix total TTC : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFacturePrixTTC"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+android:editable="false"
+android:cursorVisible="false"
+>
+</EditText>
+<TextView
+android:id="@+id/lblFactureNotes"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Notes : "
+>
+</TextView>
+<EditText
+android:id="@+id/txtFactureNotes"
+android:layout_width="fill_parent"
+android:layout_height="35px"
+android:textSize="14px"
+>
+</EditText>
+<CheckBox
+android:id="@+id/ckboxFacturePaye"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Payée"
+>
+</CheckBox>
+<TableLayout
+android:id="@+id/lytFactureTableLayoutBottom"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:stretchColumns="*"
+>
+<TableRow android:id="@+id/lytFactureTableLayoutBottomRow" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btnFactureVider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nouveau"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureAjouter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ajouter"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureModifier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modifier"
+    >
+    </Button>
+    <Button
+    android:id="@+id/btnFactureSupprimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Supprimer"
+    >
+    </Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>

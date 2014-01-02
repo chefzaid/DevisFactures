@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionClientRecherchercher"
+          android:title="Rechercher"
+          android:icon="@drawable/search" />
+	<item android:id="@+id/optionClientAppel"
+          android:title="Appeler"
+          android:icon="@drawable/call" />
+</menu>

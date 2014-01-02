@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.devisfactures.gui"
+		android:versionCode="1"
+		android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="3" />
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<application android:label="DevisFactures" android:icon="@drawable/bill">
+		<activity android:name="MainView"
+						android:label="DevisFactures">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN" />
+					<category android:name="android.intent.category.LAUNCHER" />
+				</intent-filter>
+		</activity>
+		<activity android:name="DevisTabHost"
+				  android:label="Devis">
+		</activity>
+		<activity android:name="DevisView"
+				  android:label="Devis">
+		</activity>
+		<activity android:name="DevisArticleView"
+				  android:label="Articles">
+		</activity>
+		<activity android:name="FactureTabHost"
+				  android:label="Factures">
+		</activity>
+		<activity android:name="FactureView"
+				  android:label="Factures">
+		</activity>
+		<activity android:name="FactureArticleView"
+				  android:label="Articles">
+		</activity>
+		<activity android:name="ArticleView"
+				  android:label="Articles">
+		</activity>
+		<activity android:name="ClientView"
+				  android:label="Clients">
+		</activity>
+		<activity android:name="OptionInfosView"
+				  android:label="Informations utlisateurs">
+		</activity>
+		<activity android:name="OptionRechercherView"
+				  android:label="Recherche">
+		</activity>
+		<activity android:name="OptionFiltrerDevisView"
+				  android:label="Filtrage devis">
+		</activity>
+		<activity android:name="OptionFiltrerFactureView"
+				  android:label="Filtrage factures">
+		</activity>
+		<activity android:name="OptionFiltrerArticleView"
+				  android:label="Filtrage articles">
+		</activity>
+		<activity android:name="OptionTrierDevisView"
+				  android:label="Triage devis">
+		</activity>
+		<activity android:name="OptionTrierFactureView"
+				  android:label="Triage factures">
+		</activity>
+		<activity android:name="OptionTrierArticleView"
+				  android:label="Triage articles">
+		</activity>
+		<activity android:name="com.devisfactures.service.FileChooser"
+				  android:label="Ouvrir fichier">
+		</activity>
+	</application>
+</manifest> 
