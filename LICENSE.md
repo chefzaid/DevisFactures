@@ -1,0 +1,3 @@
+Copyleft under GPLv3
+...
+Contact me at : chef.zaid@gmail.com
